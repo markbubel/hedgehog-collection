@@ -17,7 +17,7 @@ submitButton.addEventListener("click", function (e) {
     // Collecting hedgehogs
     let numberOfHogsField = document.getElementById('numOfHogs');
     let number = numberOfHogsField.value;
-    console.log(number);
+    
     while (number > 0) {
         let box = document.createElement('div');
         box.setAttribute('class', 'box');
@@ -37,7 +37,6 @@ submitButton.addEventListener("click", function (e) {
             if (hedgehogNodes.length < 1) {
                 wonMessage.style.display = "block";
             }
-
         });
         number--;
     }
